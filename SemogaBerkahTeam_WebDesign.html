@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabhana Outdoors Rent</title>
+    <style>
+        .body {
+            background-image: url('https://www.pesonaindo.com/wp-content/uploads/2016/04/bromo.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: img src="https://www.pesonaindo.com/wp-content/uploads/2016/04/bromo.jpg"  no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: rgba(53, 66, 74, 0.8); /* Transparan */
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+        }
+        #showcase h1 {
+            margin-top: 0;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #newsletter {
+            padding: 15px;
+            background: rgba(53, 66, 74, 0.8);
+        }
+        #newsletter h1 {
+            float: left;
+        }
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+        .button_1 {
+            height: 38px;
+            background: #e8491d;
+            border: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+            cursor: pointer; /* Pointer on hover */
+        }
+        #boxes {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #boxes .box {
+            flex: 1; /* Flex grow */
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Background for boxes */
+            border-radius: 8px;
+        }
+        #boxes .box img {
+            width: 90px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #e8491d;
+            text-align: center;
+        }
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #newsletter h1,
+            #newsletter form,
+            #boxes .box {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+            #showcase h1 {
+                margin-top: 40px;
+            }
+            #newsletter button, .quote button {
+                display: block;
+                width: 100%;
+            }
+            #newsletter form input[type="email"] {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            #boxes {
+                flex-direction: column; /* Stack boxes on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Sabhana Outdoors</span>  Trip</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="showcase">
+        <div class="container">
+            <img src="https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2020/10/Danau-Toba-edited.jpg">
+            <h1>Solusi Bisnis Profesional</h1>
+            <p>Kami menyediakan layanan terbaik untuk mengembangkan bisnis Anda</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>join open trip bersama kami</h1>
+            <form>
+                <input type="email" placeholder="Masukkan Email..." required>
+                <button type="submit" class="button_1">Berlangganan</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://www.pesonaindo.com/wp-content/uploads/2016/04/bromo.jpg" >
+                <h3>gunung bromo</h3>
+                <p>Jangan lewatkan kesempatan untuk menjelajahi keindahan Gunung Bromo dengan harga terjangkau!
+
+                    Mulai hanya 300 ribuan, Anda bisa menikmati petualangan seru dan menantang bersama driver berpengalaman kami.
+                    
+                    Booking sekarang dan buat momen tak terlupakan bersama kami.</p>
+            </div>
+            <div class="box">
+                <img src="https://asset.kompas.com/crops/EKI_v4h8UXSKGpgtgL5IADboT2E=/5x65:730x548/750x500/data/photo/2020/05/18/5ec27908adb29.jpg" >
+                <h3>labuan bajo</h3>
+                <p> Jangan lewatkan kesempatan untuk snorkeling di spot-spot terbaik yang akan membuat liburan Anda tak terlupakan. Jadikan perjalanan Anda menjadi pengalaman pribadi dengan Private Trip, atau ikut Open Trip Labuan Bajo untuk berbagi petualangan dengan para pelancong lainnya. Bergabunglah dengan kami untuk menjadikan liburan Anda menjadi momen yang tak terlupakan.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.antaranews.com/cache/1200x800/2018/04/Target-Kunjungan-Wisatawan-Mancanegara-060418-Lmo-5.jpg" >
+                <h3>lava tour merapi</h3>
+                <p>Lava Tour Merapi merupakan wisata alam yang berapda di provinsi Yogyakarta dengan sebuah pejalanan menggunakan mobil Willys yaitu mobil jeep yang dipakai saat perang dunia ke II. Layaknya konvoi, dengan 11 armada mobil jeep yang membawa seluruh karyawan KSPPS Umat Sejahtera Mulia ini kita akan dibawa menyusuri kawasan yang terdampak erupsi Gunung Merapi pada tahun 2010 yang tentunya memacu
+                    adrenalin kita karena melawati jalanan terjal, curam, serta menantang. Pemandangan alam yang disuguhkan pun tak kalah memanjakan mata, dengan perjalanan 3 – 4 jam kita menungunjungi 6 destinasi dimana setiap tempat memberikan pesona yang luar biasa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hak Cipta &copy; 2024 Sabhana Outdoors Trip</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple form validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let email = document.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Terima kasih telah berlangganan!');
+            } else {
+                alert('Silakan masukkan alamat email Anda.');
+            }
+        });
+    </script>
+</body>
+</html>
